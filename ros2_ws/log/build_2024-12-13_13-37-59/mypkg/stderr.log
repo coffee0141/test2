@@ -1,0 +1,5 @@
+  File "/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py", line 15
+    n = += 1
+        ^
+SyntaxError: invalid syntax
+
