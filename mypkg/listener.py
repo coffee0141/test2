@@ -1,30 +1,23 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.srv import Query
-
-rclpy.init()
-node = Node("listener") 
+from std_msgs.msg import String
 
 def main():
-    client = node.create_client(Query, 'query')
-    while not client.wait_for_service(timeout_sec=1.0):
-       node.get_logger().info('待機中')
+    rclpy.init()
+    node = Node("listener")
 
-    req = Query.Request()
-    req.name = "本山暖"
-    future = client.call_async(req)
+    def callback(msg):
+        text = msg.data
+        word_count = len(text.split())  
+        char_count = len(text)         
+        node.get_logger().info(f'Received: "{text}" (Word count: {word_count}, Character count: {char_count})')
 
-    while rclpy.ok():
-        rclpy.spin_once(node)
-        if future.done():
-            try:
-                response = future.result()
-            except: 
-                node.get_logger().info('呼び出し失敗')
-            else:
-                node.get_logger().info("age: {}".format(response.age))
+    node.create_subscription(String, "chatter", callback, 10)
+    rclpy.spin(node)
 
-            break
+if __name__ == "__main__":
+    main()
 
-    node.destroy_node()
-    rclpy.shutdown()
+
+
+
