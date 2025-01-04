@@ -6,6 +6,7 @@
 /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/__pycache__/listener.cpython-38.pyc
 /home/haru/test2/ros2_ws/install/mypkg/share/ament_index/resource_index/packages/mypkg
 /home/haru/test2/ros2_ws/install/mypkg/share/mypkg/package.xml
+/home/haru/test2/ros2_ws/install/mypkg/share/mypkg/talk_listen.launch.py
 /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/entry_points.txt
 /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/zip-safe
 /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/SOURCES.txt

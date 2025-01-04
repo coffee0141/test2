@@ -1,0 +1,202 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.000499] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.001841] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.026652] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.099388] (-) TimerEvent: {}
+[0.199895] (-) TimerEvent: {}
+[0.300312] (-) TimerEvent: {}
+[0.302851] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.306049] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.306104] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/haru/test2/ros2_ws/build/person_msgs', '--', '-j8', '-l8'], 'cwd': '/home/haru/test2/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'haru'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/haru/test2/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/haru'), ('OLDPWD', '/home/haru/test2/ros2_ws/src/mypkg/mypkg'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/haru/test2/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'haru'), ('NAME', 'owner'), ('WSL_INTEROP', '/run/WSL/9_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/haru/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/moto0/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/moto0/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/haru/test2/ros2_ws/install/person_msgs:/home/haru/test2/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/haru/test2/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/haru/test2/ros2_ws/install/person_msgs:/home/haru/test2/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.400551] (-) TimerEvent: {}
+[0.459137] (person_msgs) StdoutLine: {'line': b'[  2%] Built target person_msgs__cpp\n'}
+[0.463750] (person_msgs) StdoutLine: {'line': b'[ 12%] Built target person_msgs__rosidl_generator_c\n'}
+[0.493256] (person_msgs) StdoutLine: {'line': b'[ 33%] Built target person_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.493495] (person_msgs) StdoutLine: {'line': b'[ 33%] Built target person_msgs__rosidl_typesupport_cpp\n'}
+[0.495279] (person_msgs) StdoutLine: {'line': b'[ 43%] Built target person_msgs__rosidl_typesupport_introspection_c\n'}
+[0.498048] (person_msgs) StdoutLine: {'line': b'[ 53%] Built target person_msgs__rosidl_typesupport_c\n'}
+[0.500635] (-) TimerEvent: {}
+[0.507986] (person_msgs) StdoutLine: {'line': b'[ 64%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.537390] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.560167] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs\n'}
+[0.585199] (person_msgs) StdoutLine: {'line': b'[ 76%] Built target person_msgs__py\n'}
+[0.600758] (-) TimerEvent: {}
+[0.615073] (person_msgs) StdoutLine: {'line': b'[ 84%] Built target person_msgs__python\n'}
+[0.645310] (person_msgs) StdoutLine: {'line': b'[ 89%] Built target person_msgs__rosidl_typesupport_c__pyext\n'}
+[0.646479] (person_msgs) StdoutLine: {'line': b'[ 94%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.646638] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.657860] (person_msgs) CommandEnded: {'returncode': 0}
+[0.700904] (-) TimerEvent: {}
+[0.741457] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'install'}
+[0.751137] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/haru/test2/ros2_ws/build/person_msgs'], 'cwd': '/home/haru/test2/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'haru'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/haru/test2/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/haru'), ('OLDPWD', '/home/haru/test2/ros2_ws/src/mypkg/mypkg'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/haru/test2/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'haru'), ('NAME', 'owner'), ('WSL_INTEROP', '/run/WSL/9_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/haru/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/moto0/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/moto0/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/haru/test2/ros2_ws/install/person_msgs:/home/haru/test2/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/haru/test2/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/haru/test2/ros2_ws/install/person_msgs:/home/haru/test2/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.759601] (person_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.759939] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs\n'}
+[0.760075] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.760301] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.760525] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/query.h\n'}
+[0.760627] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.760696] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.h\n'}
+[0.760878] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.h\n'}
+[0.761018] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.c\n'}
+[0.761560] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__functions.h\n'}
+[0.761724] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.761850] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.762189] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h\n'}
+[0.762294] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h\n'}
+[0.762462] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c\n'}
+[0.762570] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h\n'}
+[0.762642] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h\n'}
+[0.762724] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.762829] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh\n'}
+[0.762908] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv\n'}
+[0.763002] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so\n'}
+[0.763093] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.763351] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.763521] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.763898] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_c.h\n'}
+[0.764005] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.764077] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.764153] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h\n'}
+[0.764224] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.765023] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.765221] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.765568] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.765808] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.766077] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/dds_fastrtps\n'}
+[0.766384] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.766525] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.766588] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.766723] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps\n'}
+[0.767076] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.767179] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.767832] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.768016] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.768366] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.768699] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.769064] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.c\n'}
+[0.769161] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h\n'}
+[0.769291] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.769438] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.769624] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.769733] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h\n'}
+[0.769956] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c\n'}
+[0.770216] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.770815] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so\n'}
+[0.771038] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.771353] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.771633] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/query.hpp\n'}
+[0.771795] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.771920] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__struct.hpp\n'}
+[0.772310] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__traits.hpp\n'}
+[0.772472] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__builder.hpp\n'}
+[0.772794] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.hpp\n'}
+[0.773076] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.773265] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.773451] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.773650] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp\n'}
+[0.773818] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp\n'}
+[0.774078] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp\n'}
+[0.774169] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp\n'}
+[0.774247] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp\n'}
+[0.774328] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[0.774405] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv\n'}
+[0.774488] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail\n'}
+[0.774651] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__type_support.cpp\n'}
+[0.774861] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/srv/detail/query__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.774928] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[0.775002] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[0.775054] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.775102] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp\n'}
+[0.775149] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.775301] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so\n'}
+[0.775565] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh\n'}
+[0.775836] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv\n'}
+[0.775939] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py\n'}
+[0.801044] (-) TimerEvent: {}
+[0.817557] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg\n'}
+[0.817897] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py\n'}
+[0.818118] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c\n'}
+[0.818319] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py\n'}
+[0.818629] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv\n'}
+[0.818709] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query.py\n'}
+[0.818766] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/_query_s.c\n'}
+[0.818816] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/srv/__init__.py\n'}
+[0.819143] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.820220] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.821414] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.822213] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so\n'}
+[0.822527] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl\n'}
+[0.822718] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.idl\n'}
+[0.822903] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg\n'}
+[0.823248] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.srv\n'}
+[0.823380] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Request.msg\n'}
+[0.823553] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Response.msg\n'}
+[0.823721] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs\n'}
+[0.823871] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs\n'}
+[0.824009] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh\n'}
+[0.824157] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv\n'}
+[0.824298] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/path.sh\n'}
+[0.824550] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/environment/path.dsv\n'}
+[0.824870] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/local_setup.bash\n'}
+[0.825087] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/local_setup.sh\n'}
+[0.825277] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/local_setup.zsh\n'}
+[0.825420] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/local_setup.dsv\n'}
+[0.825554] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/package.dsv\n'}
+[0.825689] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/ament_index/resource_index/packages/person_msgs\n'}
+[0.825823] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport.cmake\n'}
+[0.826640] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.826903] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.827823] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.827948] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.828235] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.828475] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.828917] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.829121] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.829989] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.832905] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.833263] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.833408] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.833550] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.833670] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.834368] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.834529] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.834693] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.834826] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake\n'}
+[0.834958] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake\n'}
+[0.835087] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/haru/test2/ros2_ws/install/person_msgs/share/person_msgs/package.xml\n'}
+[0.835222] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/haru/test2/ros2_ws/build/mypkg/build', 'install', '--record', '/home/haru/test2/ros2_ws/build/mypkg/install.log', '--install-scripts', '$base/lib/mypkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/haru/test2/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'haru', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/haru/test2/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/haru', 'OLDPWD': '/home/haru/test2/ros2_ws/src/mypkg/mypkg', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/haru/test2/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'haru', 'NAME': 'owner', 'WSL_INTEROP': '/run/WSL/9_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/haru/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/moto0/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/moto0/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/haru/test2/ros2_ws/install/person_msgs:/home/haru/test2/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/haru/test2/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/haru/test2/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages:/home/haru/test2/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/haru/test2/ros2_ws/install/person_msgs', 'WSLENV': ''}, 'shell': False}
+[0.838873] (person_msgs) CommandEnded: {'returncode': 0}
+[0.901279] (-) TimerEvent: {}
+[0.937518] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 0}
+[1.001436] (-) TimerEvent: {}
+[1.042201] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.042593] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[1.042883] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[1.043105] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[1.043531] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[1.043654] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[1.080739] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.082099] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.082382] (mypkg) StdoutLine: {'line': b'running build\n'}
+[1.082545] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[1.082788] (mypkg) StdoutLine: {'line': b'copying mypkg/talker.py -> /home/haru/test2/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[1.082855] (mypkg) StdoutLine: {'line': b'copying mypkg/listener.py -> /home/haru/test2/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[1.082980] (mypkg) StdoutLine: {'line': b'running install\n'}
+[1.083702] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.084768] (mypkg) StdoutLine: {'line': b'copying /home/haru/test2/ros2_ws/build/mypkg/build/lib/mypkg/talker.py -> /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[1.084935] (mypkg) StdoutLine: {'line': b'copying /home/haru/test2/ros2_ws/build/mypkg/build/lib/mypkg/listener.py -> /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[1.085392] (mypkg) StdoutLine: {'line': b'byte-compiling /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc\n'}
+[1.086631] (mypkg) StdoutLine: {'line': b'byte-compiling /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc\n'}
+[1.087043] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[1.087216] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.088592] (mypkg) StdoutLine: {'line': b"removing '/home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.088977] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/haru/test2/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info\n'}
+[1.090441] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.101564] (-) TimerEvent: {}
+[1.105671] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/haru/test2/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.105960] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/haru/test2/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.106490] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/haru/test2/ros2_ws/build/mypkg/install.log'\n"}
+[1.125520] (mypkg) CommandEnded: {'returncode': 0}
+[1.133694] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.134678] (-) EventReactorShutdown: {}

@@ -1,3 +1,4 @@
+README.md
 package.xml
 setup.cfg
 setup.py
@@ -8,6 +9,7 @@ setup.py
 ../../build/mypkg/mypkg.egg-info/requires.txt
 ../../build/mypkg/mypkg.egg-info/top_level.txt
 ../../build/mypkg/mypkg.egg-info/zip-safe
+launch/talk_listen.launch.py
 mypkg/__init__.py
 mypkg/listener.py
 mypkg/talker.py
