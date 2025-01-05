@@ -9,11 +9,11 @@
 ### 使用方法
 ランダムな文章(英語)をトピックにパブリッシュするtalkerノードを起動します.
 ```
-ros2 run mypkg talker
+$ros2 run mypkg talker
 ```
 もう一つのターミナルを起動し, トピックからメッセージを受け取り, 単語数と文字数をカウントするlistenerノードを起動します.
 ```
-ros2 run mypkg listener
+$ros2 run mypkg listener
 ```
 
 ### 実行例
